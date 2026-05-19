@@ -121,11 +121,12 @@ INSERT INTO Wallets (patient_id, balance, status) VALUES
 (3, 1000000.00, 'Inactive'); -- Test Case 2: Nhiều tiền nhưng thẻ bị khóa
 -- Phần A:
 /*
-	- 2 tham số đầu vào: p_patient_id và p_phone
-    - 2 tham số đầu ra: p_total_dept và p_message
-    - 2 giải pháp xử lí: + dùng cấu trúc if...end if
-						 +  dùng mệnh đề where
-	- Bảng so sánh: 
+	- 2 tham số đầu vào: mã bệnh nhân và số điện thoại
+    - 2 tham số đầu ra: tổng nợ và thông báo trạng thái
+    - 2 giải pháp xử lí: + dùng cấu trúc if...end if: nếu có ID sẽ tìm theo ID, không có ID sẽ tìm theo phone
+								nếu cả 2 cùng trống thì báo lỗi
+						 + dùng mệnh đề where: cho phép truyền cả ID lẫn phone
+- Bảng so sánh: 
 | Tiêu chí             | IF / ELSEIF  | WHERE linh hoạt     |
 | -------------------- | ------------ | ------------------- |
 | Dễ đọc               | Rất dễ       | Khó hơn             |
