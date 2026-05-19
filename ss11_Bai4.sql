@@ -141,7 +141,7 @@ INSERT INTO Wallets (patient_id, balance, status) VALUES
 	Luồng chạy: + Kiểm tra xem các tham số IN có bị null không
 				+ Tìm bệnh nhân theo ID
                 + Tìm bênh nhân theo số điện thoại
-                + Không tìm thấy -> Trả về thông báo không tìm thấy đội mũ
+                + Không tìm thấy -> Trả về thông báo không tìm thấy
                 + Nếu thấy: trả thông báo nợ thành công
 */
 DELIMITER //
